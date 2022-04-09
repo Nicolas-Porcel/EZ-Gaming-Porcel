@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(93, 4, 22);
+    background-image: url(../IMAGES/backgrounds/white-stripe-background.png);
+}
+
+.grid_content{
+    display: grid;
+    grid-template-areas: 
+    "header title title"
+    "header title title"
+    "formulario formulario formulario"
+    "footer footer footer";
+    grid-template-rows: 3rem 3rem auto 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*--- HEADER ---*/
+header{
+    background-color: black;
+}
+
+header h1{
+    background-color: rgb(93, 4, 22);
+    color: white;
+}
+
+#page_title{
+    background-color: black;
+    color: white;
+}
+
+/*--- MAIN ---*/
+#formulario{
+    grid-area: formulario;
+    margin: 1rem;
+}
+
+#formulario h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.campos_formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#datos_personales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.campo_texto label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.campo_texto input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+.campo_seleccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.campo_seleccion label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+    padding: 1rem;
+    background-color: rgb(93, 4, 22);
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    gap: 0.5rem;
+}
+
+#btm_enviar input{
+    background-color: rgba(130, 251, 69, 0.993);
+    border-color: white;
+    font-size: large;
+    width: 100%;
+    padding: 0.1rem;
+    border-top-left-radius: 0.5rem;
+}
+
+#btm_limpiar input{
+    background-color: rgb(255, 78, 108);
+    border-color: white;
+    font-size: large;
+    width: 100%;
+    padding: 0.1rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+/*--- FOOTER ---*/
+.socials_title{
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width:360px){
+    .grid_content{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "title"
+        "formulario"
+        "footer";
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+    }    
+
+    header h1{
+        background:none;
+    }
+}
