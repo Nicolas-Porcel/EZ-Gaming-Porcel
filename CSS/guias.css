@@ -5,18 +5,19 @@ body{
 .grid_content{
     display: grid;
     grid-template-areas:
-    "header title title"
-    "header menu menu"
-    "intro intro intro"
-    "instalacion video primeros_pasos"
-    "menu_guia menu_guia menu_guia"
-    "objetivo objetivo objetivo"
-    "torres torres torres"
-    "champs champs champs"
-    "caracteristicas caracteristicas caracteristicas"
-    "footer footer footer";
-    grid-template-rows:3rem 3rem repeat(7, auto) 3rem;
-    grid-template-columns: repeat(3, 1fr);
+    "header header title title title title"
+    "header header menu menu menu menu"
+    "intro intro intro intro intro intro"
+    "instalacion instalacion instalacion primeros_pasos primeros_pasos primeros_pasos"
+    "video video video video video video"
+    "menu_guia menu_guia menu_guia menu_guia menu_guia menu_guia"
+    "objetivo objetivo objetivo objetivo objetivo objetivo"
+    "torres torres torres torres torres torres"
+    "champs champs champs champs champs champs"
+    "caracteristicas caracteristicas caracteristicas caracteristicas caracteristicas caracteristicas"
+    "footer footer footer footer footer footer";
+    grid-template-rows:3rem 3rem repeat(9, auto) 3rem;
+    grid-template-columns: repeat(6, 1fr);
     margin: 0%;
     height: 100ch;
 }
@@ -78,7 +79,6 @@ header h1{
     padding: 0.5rem;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    width: 30%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
     color: white;
@@ -121,14 +121,18 @@ header h1{
     grid-area: video;
     display: flex;
     justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 30rem;
 }
 
 #video_gameplay iframe{
-    width: 100%;
     padding: 0.3rem;
     background-color: black;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
 #primeros_pasos{
@@ -298,6 +302,71 @@ header h1{
 }
 
 
+@media (max-width:920px){
+    .grid_content{
+        display: grid;
+        grid-template-areas:
+        "header title title" 
+        "header menu menu"
+        "intro intro intro"
+        "instalacion instalacion instalacion" 
+        "primeros_pasos primeros_pasos primeros_pasos" 
+        "video video video"
+        "menu_guia menu_guia menu_guia"
+        "objetivo objetivo objetivo"
+        "torres torres torres"
+        "champs champs champs"
+        "caracteristicas caracteristicas caracteristicas"
+        "footer footer footer";
+        grid-template-rows: 3rem 3rem repeat(9, auto) 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0%;
+        height: 100ch;
+    }
+
+    #intro_WR{
+        grid-area: intro;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #intro_WR img{
+        width: 80%;
+    }
+    
+    #intro_WR p{
+        border: 1px solid rgb(246, 246, 59);
+        width: 90%;
+    }
+
+    .articulo{
+        flex-flow: column wrap;
+    }
+
+    .articulo span{
+        width: 90%;
+    }
+    
+    .imagen_articulo{
+        width: 80%;
+    }
+
+    #elegir_campeon h2{
+        font-size: medium;
+        width: 60%;
+        margin: auto;
+    }
+    
+    .contenedor_carriles{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .descripcion_carril{
+        font-weight: lighter;
+    }
+}
+
 @media (max-width:360px){
     .grid_content{
         display: grid;
@@ -343,7 +412,7 @@ header h1{
     }
 
     #video_gameplay iframe{
-        width: 80%;
+        width: 90%;
     }
 
     .articulo{

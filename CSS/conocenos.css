@@ -94,6 +94,17 @@ header h1{
     padding: 1rem;
     border-radius: 1rem;
     width: 80%;
+    animation: aparecer 5s linear 0s 1 alternate;
+}
+
+/*animacion de aparecer texto cambiando su color*/
+@keyframes aparecer{
+    from{
+        color: rgb(53, 28, 79);
+    }
+    to{
+        color: white;
+    }
 }
 
 #descripcion_1{
