@@ -139,9 +139,6 @@
     color: rgb(255, 217, 0);
 }
 
-.imagen-articulo{
-}
-
 
 /*#######################################*/
 /*-- GUIA_HTML MAIN --*/
@@ -167,6 +164,39 @@
     background-color: rgba(6, 9, 51, 0.9);
 }
 
+#top{
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/darius-background.jpg);
+    background-size: cover;
+}
+#jungla{
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/jarvan-background.png);
+    background-size: cover;
+}
+#mid{
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/Akali-background.jpg);
+    background-size: cover;
+}
+#supp{
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/braum-background.jpg);
+    background-size: cover;
+}
+#adc{
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/MissFortune-background.jpg);
+    background-size: cover;
+}
+
+.titulo-carril{
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
+}
+
+.descripcion-carril{
+    transition: all 0.5s;
+    border-radius: 1rem;
+}
+
+.descripcion-carril:hover{
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
+}
 
 /*#######################################*/
 /*-- FOOTER --*/
@@ -181,28 +211,6 @@
 
 #redes img{
     width: 100%;
-}
-
-/*#######################################*/
-/*-- BORDES --*/
-.rounded-topL-botR-1{
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-
-.rounded-topR-botL-1{
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-}
-
-.rounded-topL-botR-2{
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
-
-.rounded-topR-botL-2{
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
 }
 
 /*#######################################*/
@@ -227,9 +235,131 @@
     animation-duration: 2s;
 }
 
+#descripcion-intro{
+    animation-duration: 3s;
+}
+
+#descripcion-instalacion{
+    animation-duration: 6s;
+}
+
+#descripcion-primeros-pasos{
+    animation-duration: 9s;
+}
+
 /*#######################################*/
 /*-- CLASES VARIAS --*/
 
+.rounded-topL-botR-1{
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.rounded-topR-botL-1{
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.rounded-topL-botR-2{
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.rounded-topR-botL-2{
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
 .t-line-through{
     text-decoration: line-through;
+}
+
+
+/*#######################################*/
+/*-- RESPONSIVE --*/
+
+@media (max-width:360px){
+
+    #header-menu ul li a{
+        font-size: small !important;
+    }
+
+    #title-row{
+        font-size: x-large !important;
+    }
+
+    .division{
+        margin: 1rem !important;
+    }
+
+    .description-info{
+        font-size: medium !important;
+        width: 100% !important;
+    } 
+
+    .descripcion-nosotros{
+        font-size: medium !important;
+    }
+
+    .titulo-nosotros{
+        font-size: x-large !important;
+    }
+
+    .listado-preguntas h3{
+        font-size: large !important;
+    }
+
+    .listado-preguntas p{
+        font-size: medium !important;
+    }
+
+    #descripcion-cursos h2{
+        font-size: x-large !important;
+    }
+
+    #descripcion-cursos p{
+        width: 90% !important;
+        font-size: medium !important;
+    }
+
+    #seccion-planes-cursos{
+        margin: 0% !important;
+    }
+
+    .curso{
+        height: fit-content !important;
+        padding: 0.5rem !important;
+        padding-bottom: 0rem !important;
+    }
+
+    .descripcion-intro{
+        width: 100% !important;
+        font-size: medium !important;
+    }
+
+    #menu-guia a{
+        font-size: medium !important;
+    }
+
+    .titulo-articulo{
+        font-size: x-large !important;
+    }
+
+    .descripcion_articulo{
+        width: 100% !important;
+        font-size: medium !important;
+    }
+
+    .descripcion-carril{
+        padding: 0rem !important;
+        font-size: medium !important;
+    }
+
+    .contenido-otras-caracs{
+        width: 90% !important;
+    }
+
+    .descripcion-caracteristicas{
+        font-size: medium !important;
+    }
 }
