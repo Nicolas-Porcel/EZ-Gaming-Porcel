@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EZG - Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+
+    <div class="row-fluid d-flex justify-content-center align-items-center flex-wrap bg-dark" id="header-menu">
+        <!--#######################################-->
+        <!-- HEADER -->
+        <header class="col-md-4 m-0">
+            <p class="text-light text-center fs-4">
+                <span class="text-danger fs-2">EZ </span>Gaming - Coaching de Wild Rift
+            </p>
+        </header>
+        
+        <!--#######################################-->
+        <!-- MENU -->
+        <nav class="col-md-8">
+            <ul class="nav d-flex justify-content-around flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="html/nosotros.html">nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="html/coaching.html">coaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="html/guia.html">guias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-6 text-uppercase text-warning animate__animated animate__headShake" href="html/contacto.html">contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--#######################################-->
+    <!-- FORM - MAIN -->
+    <form class="bg-dark text-light d-flex flex-column align-items-center">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName4">Nombre</label>
+            <input type="text" class="form-control" id="inputName4" placeholder="nombre">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Calle 123">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Localidad</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Localidad">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Ciudad">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputState">Pais</label>
+            <select id="inputState" class="form-control">
+              <option selected>pais...</option>
+              <option>Argentina</option>
+              <option>Uruguay</option>
+              <option>Chile</option>
+              <option>Paraguay</option>
+              <option>otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              tengo dudas sobre EZ gaming
+            </label>
+              <label class="form-check-label" for="gridCheck">
+               Quisiera comprar un curso   
+              </label>
+              <label class="form-check-label" for="gridCheck">
+                eh comprado un curso 
+              </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+    <!--#######################################-->
+    <!-- FOOTER -->
+    <footer class="bg-dark m-0 d-flex flex-column gap-3">
+        <h3 class="bg-light text-center text-dark text-uppercase">- redes -</h3>
+        <div id="redes" class="d-flex justify-content-center gap-5 align-items-center bg-dark">
+            <a href=""><img src="../images/social/instagram-white-icon.png" alt=""></a>
+            <a href=""><img src="../images/social/facebook-white-icon.png" alt=""></a>
+            <a href=""><img src="../images/social/twitter-white-icon.png" alt=""></a>
+        </div>
+        <p class="text-light text-center fs-5 bg-dark">
+            @Copyright 2022.EZGaming - 4P Marketing
+        </p>
+    </footer>
     
 </body>
 </html>
