@@ -4,82 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../IMAGES/logo/drake-logo-2.png" type="image/x-icon">
-    <title>EZ Gaming - Nosotros</title>
-    <link rel="stylesheet" href="../CSS/estilos.css">
-    <link rel="stylesheet" href="../CSS/conocenos.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <title>EZG - Nosotros</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <div class="grid_content">
-        <header>
-            <!--hago uso de animacion bounce en mi header h1-->
-            <h1 class="animate__animated animate__backInLeft">ez gaming</h1>
+    <div class="row-fluid d-flex justify-content-center align-items-center flex-wrap bg-dark" id="header-menu">
+        <!--#######################################-->
+        <!-- HEADER -->
+        <header class="col-md-4 m-0">
+            <p class="text-light text-center fs-4">
+                <span class="text-danger fs-2">EZ </span>Gaming - Coaching de Wild Rift
+            </p>
         </header>
-
-        <div id="page_title">
-            <h2 class="animate__animated animate__lightSpeedInRight">sobre nosotros</h2>
-        </div>
         
-        <nav id="menu">
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="conocenos.html">conocenos</a></li>
-                <li><a href="cursos.html">cursos</a></li>
-                <li><a href="guias.html">guias</a></li>
+        <!--#######################################-->
+        <!-- MENU -->
+        <nav class="col-md-8">
+            <ul class="nav d-flex justify-content-around flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="../index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-6 text-uppercase text-warning animate__animated animate__headShake" href="nosotros.html">nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="coaching.html">coaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="guia.html">guias</a>
+                </li>
             </ul>
         </nav>
-
-        <article class="carta_nos" id="descripcion_1">
-            <img class="carta_nos_image" src="../IMAGES/nosotros/mobile-esports-team-2.jpg" alt="">
-            <span class="carta_nos_description">
-                <h2>Ofrecemos lo mejor</h2>
-                <p>
-                    Nos dedicamos a ofrecerte guias y noticias sobre
-                    todo lo relacionado a League of Legends Wild Rift
-                    tambien contamos con cursos pagos, que cuentan con
-                    el seguimiento y los mejores consejos de personas
-                    que comprenden las mecanicas del juego que se requieren
-                    para convertirte en un mejor jugador
-                    hasta incluso, porque no, en jugador de competitivo
-                    gracias a todo lo que puedes aprender con nosotros.
-                </p>
-            </span>
-        </article>
-
-        <article class="carta_nos" id="descripcion_2">
-            <span class="carta_nos_description">
-                <p>
-                    Formamos mejores jugadores desde hace ya un año
-                    y esperamos que nos acompañen por muchos mas.
-                    Si te interesan nuestros cursos y queres acceder a uno de ellos,
-                    contamos con otra plataforma a la que se accede luego de
-                    entrar a un curso, para ello te invitamos a echarle un vistazo
-                    a nuestros cursos disponibles actualmente,
-                    te esperamos, y recorda, nunca es mal momento para instruirse,
-                    jugar bien y ganar EZ.
-                </p>
-                <h2>Unete a nosotros</h2>
-            </span>
-            <img class="carta_nos_image" src="../IMAGES/nosotros/mobile-esports-team.jpg" alt="">
-        </article>
-        
-        <footer>
-            <nav class="socials">
-                <h2 class="socials_title">- redes -</h2>
-                <ul class="socials_links">
-                    <li><a href=""><img src="../IMAGES/social/instagram-icon.png" alt="instagram-icon"></a></li>
-                    <li><a href=""><img src="../IMAGES/social/facebook-icon.png" alt="facebook-icon"></a></li>
-                    <li><a href=""><img src="../IMAGES/social/twitter-icon.png" alt="twitter-icon"></a></li>
-                </ul>
-            </nav>
-            <article class="credits">
-                <p>© 2022 EZ.Gaming, Todos los Derechos Reservados - 4P Marketing</p>
-            </article>
-        </footer>
     </div>
+
+    <!--#######################################-->
+    <!-- MAIN -->
+
+    <!-- este seria un pequño menu para navegar en esta pagina.
+           <nav class="menu-nosotros">
+        <ul class="nav nav-tabs d-flex justify-content-around flex-wrap bg-light">
+            <li class="nav-item">
+                <a class="nav-link fs-6 text-uppercase text-danger" href="#titulo-nosotros-1">¿A que nos dedicamos?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-6 text-uppercase text-danger" href="#titulo-nosotros-2">¿Que te espera con nosotros?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-6 text-uppercase text-danger" href="#seccion-preguntas">Preguntas Frecuentes</a>
+            </li>
+        </ul>
+    </nav> 
+    -->
+
+    <div class="w-100 border-bottom border-secondary text-center" id="articulo-nosotros-1">
+        <h2 id="titulo-nosotros-1" class="display-4 titulo-nosotros text-light bg-danger">Te ofrecemos lo mejor</h2>
+        <div class="p-3 d-flex justify-content-around align-items-center flex-wrap">
+            <img class="w-75 rounded-topL-botR-2 animate__animated animate__zoomIn" src="../images/nosotros/infinity-esports.jpg" alt="">
+            <p class="p-2 fs-4 descripcion-nosotros text-light">
+                EZ Gaming te brinda el último recurso de entrenadores experimentados de Challenger. Si estás buscando alcanzar tu rango objetivo en el juego, o simplemente comprender cada mecanica de el, 
+                el método más satisfactorio y rápido es aprender de sus mejores jugadores actuales.
+                Te ofrecemos un seguimiento personalizado y todo nuestro conocimiento sobre League of Legends Wild Rift,    
+                te garantizamos darte todo lo que necesitas para convertirte en un mejor jugador,
+                hasta incluso, porque no, en jugador de competitivo.
+            </p>
+        </div>
+    </div>
+    
+    <div class="w-100 border-bottom border-danger text-center" id="articulo-nosotros-2">
+        <h2 id="titulo-nosotros-2" class="display-4 text-light titulo-nosotros bg-primary">Unete a nosotros</h2>
+        <div class="p-3 d-flex justify-content-around align-items-center flex-wrap">
+            <img class="w-75 rounded-topL-botR-2 animate__animated animate__zoomIn" src="../images/nosotros/mobile-esports-team.jpg" alt="">
+            <p class="p-2 fs-4 text-light descripcion-nosotros">
+                Al ingresar a un plan ideal de coaching segun tus necesidades a través de nuestra plataforma, estarás en el camino más cercano para lograr tus sueños en Wild Rift. 
+                Te aseguramos que nuestros entrenadores de Wild Rift estaran a tu servicio las 24 horas del día, los 7 días de la semana. 
+                Llego el momento de unirte a los rangos más altos; todo lo que tienes que hacer es experimentar el resultado excepcional que puede ofrecerte nuestro coaching de WR. 
+                Ponte en contacto con nosotros hoy para obtener más información sobre las ventajas del servicio, y comienza ya a jugar y ganar EZ.
+            </p>
+        </div>
+    </div>
+    
+    <div class="text-center" id="cabecera-preguntas">
+        <img class="w-75" src="../images/backgrounds/half-darius-background.jpg" alt="">
+    </div>
+
+    <section class="border-bottom border-secondary" id="seccion-preguntas">
+        <div class="container-fluid bg-danger w-75" id="preguntas">
+            <h2 class="display-2 titulo-nosotros text-light">Preguntas Frecuentes</h2>
+            <ul class="listado-preguntas d-flex flex-column align-items-center gap-3">
+                <li>
+                    <h3 class="display-6 p-1 rounded-topL-botR-1">¿Qué hace un entrenador de Wild Rift?</h3>
+                    <p class="text-light">
+                        Un entrenador de Wild Rift observa cómo juegan los jugadores y da retroalimentación a cada jugador. El entrenamiento de WR puede ayudarlo a mejorar su mecánica al señalar sus errores o malos hábitos en el juego. También lo ayudarán a analizar las repeticiones y le brindarán comentarios sobre cómo mejorar su estilo de juego. 
+                    </p> 
+                </li>
+                <li>
+                    <h3 class="display-6 p-1 rounded-topL-botR-1">¿El coaching de Wild Rift es gratuito?</h3>
+                    <p class="text-light">
+                        No, el coaching de Wild Rift no es gratuito. Pero contamos con planes que son relativamente baratos y asequibles para todos, entre los que puedes elegir al que mejor se adapte a tus necesidades.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="display-6 p-1 rounded-topL-botR-1">¿Vale la pena el entrenamiento de Wild Rift?</h3>
+                    <p class="text-light">
+                        Para los jugadores de todos los niveles, el entrenamiento es una excelente manera de aprender el juego y mejorar rápidamente. Tanto si eres un jugador experimentado que busca su próxima gran victoria como si acabas de empezar con Wild Rift, el entrenamiento puede ayudarte a subir ese nivel de habilidad en poco tiempo
+                    </p>
+                </li>
+                <li>
+                    <h3 class="display-6 p-1 rounded-topL-botR-1">¿Cómo puedo pagar mi Coaching de Wild Rift?</h3>
+                    <p class="text-light">
+                        Estamos comprometidos a hacer que tu experiencia de compra con nosotros sea lo más fácil y sin complicaciones posible. Aceptamos todas las principales tarjetas de crédito y débito, ¡también pagos con MercadoPago!
+                    </p>
+                </li>
+                <li>
+                    <h3 class="display-6 p-1 rounded-topL-botR-1">¿Mejoraré?</h3>
+                    <p class="text-light">
+                        Sí, es muy posible que mejores con el coaching. Los entrenadores ayudan a guiar e instruir a sus alumnos a través de los conceptos básicos del juego hasta estrategias y mecánicas más avanzadas, incluida la selección de campeones y la comprensión de cómo desempeñar ciertos roles.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--#######################################-->
+    <!-- FOOTER -->
+    <footer class="bg-dark m-0 d-flex flex-column gap-3">
+        <h3 class="bg-light text-center text-dark text-uppercase">- redes -</h3>
+        <div id="redes" class="d-flex justify-content-center gap-5 align-items-center bg-dark">
+            <a href=""><img src="../images/social/instagram-white-icon.png" alt=""></a>
+            <a href=""><img src="../images/social/facebook-white-icon.png" alt=""></a>
+            <a href=""><img src="../images/social/twitter-white-icon.png" alt=""></a>
+        </div>
+        <p class="text-light text-center fs-5 bg-dark">
+            @Copyright 2022.EZGaming - 4P Marketing
+        </p>
+    </footer>
 </body>
 </html>

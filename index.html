@@ -4,65 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZ Gaming - Inicio</title>
-    <link rel="shortcut icon" href="IMAGES/logo/drake-logo-2.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="CSS/index.css">
-    <!--utilizo la libreria de animaciones 'animate'-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <title>EZG - Inicio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="grid_content">
-        <header>
-            <!--hago uso de animacion bounce en mi header h1-->
-            <h1 class="animate__animated animate__backInLeft">ez gaming</h1>
+    <div class="row-fluid d-flex justify-content-center align-items-center flex-wrap bg-dark" id="header-menu">
+        <!--#######################################-->
+        <!-- HEADER -->
+        <header class="col-md-4 m-0">
+            <p class="text-light text-center fs-4">
+                <span class="text-danger fs-2">EZ </span>Gaming - Coaching de Wild Rift
+            </p>
         </header>
-
-        <div id="page_title">
-            <h2 class="animate__animated animate__lightSpeedInRight">inicio</h2>
-        </div>
         
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="HTML/conocenos.html">conocenos</a></li>
-                <li><a href="HTML/cursos.html">cursos</a></li>
-                <li><a href="HTML/guias.html">guias</a></li>
+        <!--#######################################-->
+        <!-- MENU -->
+        <nav class="col-md-8">
+            <ul class="nav d-flex justify-content-around flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link active fs-6 text-uppercase text-warning animate__animated animate__headShake" href="index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="html/nosotros.html">nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="html/coaching.html">coaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="html/guia.html">guias</a>
+                </li>
             </ul>
         </nav>
-        
-        <article class="card" id="card_1">
-            <img class="card_image" src="IMAGES/inicio/wr-in-phone.jpg" alt="wr-in-phone">
-            <h3 class="card_title">cursos</h3>
-            <p class="card_description">Informate sobre nuestros cursos de coaching de Wild Rift en nuestra pagina 'cursos' y conviertete en un mejor jugador en todo aspecto.</p>   
-        </article>
-        <article class="card" id="card_2">
-            <img class="card_image" src="IMAGES/inicio/Garen-background.jpg" alt="wr-in-phone">
-            <h3 class="card_title">bienvenido</h3>
-            <p class="card_description">Somos una academia profesional con mas de 1 año de experiencia en coaching de mobas, si te interesa mejorar como jugador, este es tu lugar.</p>
-        </article>
-        <article class="card" id="card_3">
-            <img class="card_image" src="IMAGES/inicio/wr-season22-drake.jpg" alt="wr-in-phone">
-            <h3 class="card_title">guias</h3>
-            <p class="card_description">Contamos con una guia basica para comprender Wild Rift, como comenzar en wild rift, como elegir tu campeon, objetivo del juego, y mas.</p>
-        </article>
-
-        <footer>
-            <nav class="socials">
-                <h2 class="socials_title">- redes -</h2>
-                <ul class="socials_links">
-                    <li><a href=""><img src="IMAGES/social/instagram-icon.png" alt="instagram-icon"></a></li>
-                    <li><a href=""><img src="IMAGES/social/facebook-icon.png" alt="facebook-icon"></a></li>
-                    <li><a href=""><img src="IMAGES/social/twitter-icon.png" alt="twitter-icon"></a></li>
-                </ul>
-            </nav>
-            <article class="credits">
-                <p>© 2022 EZ.Gaming, Todos los Derechos Reservados - 4P Marketing</p>
-            </article>
-        </footer>
     </div>
+
+    <!--#######################################-->
+    <!-- MAIN -->
+        <div class="container-fluid p-1 text-center" id="first-info-section">
+            <h1 id="title-row" class="w-100 display-2 text-danger rounded-topL-botR-1 text-uppercase">Bienvenido a EZG</h1>
+            <div id="info-nosotros" class="d-flex flex-column align-items-center animate__animated animate__fadeIn">
+                <p class="p-3 description-info rounded-topR-botL-1 w-75 lead text-light text-uppercase">El propósito de EZ Gaming es ofrecer un proceso de entrenamiento general y satisfactorio. Con nuestros servicios de entrenamiento de WR, estás a un paso de alcanzar tus objetivos de juego, incluido obtener los rangos más altos.</p>
+            </div>
+            <div class="d-flex justify-content-center"><hr class="w-75 my-5 text-danger"></div>
+            <div id="info-nosotros" class="d-flex flex-column align-items-center animate__animated animate__fadeIn">
+                <p class="p-3 description-info rounded-topL-botR-1 w-75 text-light text-uppercase">Informate mas sobre nosotros y comienza a aprender con quienes de verdad saben sobre este juego</p>
+                <p class="w-75">
+                    <a class="btn btn-danger" href="html/nosotros.html" role="button">leer mas</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid p-1 text-center" id="second-info-section">
+            <h1 id="title-row" class="w-100 display-2 text-warning rounded-topL-botR-1 text-uppercase">El mejor Coaching</h1>
+            <div id="info-cursos" class="d-flex flex-column align-items-center animate__animated animate__fadeIn">
+                <p class="p-3 description-info rounded-topR-botL-1 w-75 lead text-light text-uppercase">Ingresar a nuestro Coaching de Wild Rift es la mejor manera de recibir entrenamiento personalizado de algunos de los mejores jugadores del mundo. Nuestros entrenadores saben lo que se necesita para tener éxito en este juego.</p>
+            </div>    
+            <div class="d-flex justify-content-center"><hr class="w-75 my-5 text-warning"></div>
+            <div id="info-cursos" class="d-flex flex-column align-items-center animate__animated animate__fadeIn">
+                <p class="p-3 description-info rounded-topL-botR-1 w-75 text-light text-uppercase">¡Tu futuro yo te lo agradecerá más tarde cuando vea cuánto mejor puede llegar a ser trabajando con nosotros ahora!</p>
+                <p class="w-75">
+                    <a class="btn btn-warning" href="html/coaching.html" role="button">leer mas</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid p-1 text-center" id="third-info-section">
+            <h1 id="title-row" class="w-100 display-2 text-primary text-uppercase">Guia Wild Rift</h1>
+            <div id="info-guias" class="d-flex flex-column align-items-center animate__animated animate__fadeIn">
+                <p class="p-3 description-info rounded-topR-botL-1 w-75 lead text-light text-uppercase">Si estas empezando desde cero en league of legends Wild Rift, nosotros brindamos una Guia gratis y accesible para todos, con la que podras comprender las nociones basicas del juego y comenzar a jugar tus primeras partidas en el.</p>
+            </div>    
+            <div class="d-flex justify-content-center"><hr class="w-75 my-5 text-primary"></div>
+            <div id="info-guias" class="d-flex flex-column align-items-center animate__animated animate__fadeIn">
+                <p class="p-3 description-info rounded-topL-botR-1 w-75 text-light text-uppercase">Echale un vistazo a esta guia basica de WR si quieres comenzar de buena forma en este juego tan complejo</p>
+                <p class="w-75">
+                    <a class="btn btn-primary" href="html/guia.html" role="button">ler mas</a>
+                </p>
+            </div>
+        </div>
+
+    <!--#######################################-->
+    <!-- FOOTER -->
+    <footer class="bg-dark m-0 d-flex flex-column gap-3">
+        <h3 class="bg-light text-center text-dark text-uppercase">- redes -</h3>
+        <div id="redes" class="d-flex justify-content-center gap-5 align-items-center bg-dark">
+            <a href=""><img src="images/social/instagram-white-icon.png" alt=""></a>
+            <a href=""><img src="images/social/facebook-white-icon.png" alt=""></a>
+            <a href=""><img src="images/social/twitter-white-icon.png" alt=""></a>
+        </div>
+        <p class="text-light text-center fs-5 bg-dark">
+            @Copyright 2022.EZGaming - 4P Marketing
+        </p>
+    </footer>
 </body>
 </html>

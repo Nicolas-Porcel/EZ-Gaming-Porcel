@@ -4,90 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../IMAGES/logo/drake-logo-2.png" type="image/x-icon">
-    <title>EZ Gaming - Cursos</title>
-    <link rel="stylesheet" href="../CSS/estilos.css">
-    <link rel="stylesheet" href="../CSS/cursos.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <title>EZG - Coaching</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-    <div class="grid_content">
-        <header>
-            <!--hago uso de animacion bounce en mi header h1-->
-            <h1 class="animate__animated animate__backInLeft">ez gaming</h1>
+<body class="bg-dark">
+    <div id="header-menu" class="row-fluid d-flex justify-content-center align-items-center flex-wrap bg-dark">
+        <!--#######################################-->
+        <!-- HEADER -->
+        <header class="col-md-4 m-0">
+            <p class="text-light text-center fs-4">
+                <span class="text-danger fs-2">EZ </span>Gaming - Coaching de Wild Rift
+            </p>
         </header>
-
-        <div id="page_title">
-            <h2 class="animate__animated animate__lightSpeedInRight">Nuestros Cursos</h2>
-        </div>
         
-        <nav id="menu">
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="conocenos.html">conocenos</a></li>
-                <li><a href="cursos.html">cursos</a></li>
-                <li><a href="guias.html">guias</a></li>
+        <!--#######################################-->
+        <!-- MENU -->
+        <nav class="col-md-8">
+            <ul class="nav d-flex justify-content-around flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="../index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="nosotros.html">nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-6 text-uppercase text-warning animate__animated animate__headShake" href="coaching.html">coaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6 text-uppercase text-danger" href="guia.html">guias</a>
+                </li>
             </ul>
         </nav>
-
-        <article id="descripcion_cursos">
-            <p>Si estas interesado en comprar uno de nuestros cursos, pero aun quieres saber mas sobre nosotros, llena este  <a href="formulario.html" target="_blank">formulario</a> para que puedas ponerte en contacto con uno de nosotros y poder preguntar lo que desees saber, te dejamos debajo los cursos con los que disponemos:
-            </p>
-        </article>
-
-        <article class="curso" id="curso_1">
-            <h1 class="tipo_curso">curso basico</h1>
-            <h1 class="precio_curso">$1000</h1>
-            <h2 class="duracion_curso">1 mes</h2>
-            <ul class="contenido_curso">
-                <li>Análisis de 10 partidas</li>
-                <li>Acceso al Curso Online</li>
-                <li>Coach 2 Horas/Semana</li>
-                <li>Gratis 2 sesiones de COACHING AVANZADO</li>
-            </ul>
-            <a class="compra_curso" href="">comprar</a>
-        </article>
-        <article class="curso" id="curso_2">
-            <h1 class="tipo_curso">curso avanzado</h1>
-            <h1 class="precio_curso">$2800</h1>
-            <h2 class="duracion_curso">2 meses</h2>
-            <ul class="contenido_curso">
-                <li>Análisis de 25 partidas</li>
-                <li>Acceso al Curso Online</li>
-                <li>Coach 5 Horas/Semana</li>
-                <li>Gratis una sesión de COACH PROFESIONAL</li>
-            </ul>
-            <a class="compra_curso" href="">comprar</a>
-        </article>
-        <article class="curso" id="curso_3">
-            <h1 class="tipo_curso">curso profesional</h1>
-            <h1 class="precio_curso">$4000</h1>
-            <h2 class="duracion_curso">2 meses</h2>
-            <ul class="contenido_curso">
-                <li>Entrenamiento Profesional</li>
-                <li>Master para 5 jugadores</li>
-                <li>Gestión del equipo</li>
-                <li>Gratis una sesion con un Team de Competitivo</li>
-            </ul>
-            <a class="compra_curso" href="">comprar</a>
-        </article>
-
-        <footer>
-            <nav class="socials">
-                <h2 class="socials_title">- redes -</h2>
-                <ul class="socials_links">
-                    <li><a href=""><img src="../IMAGES/social/instagram-icon.png" alt="instagram-icon"></a></li>
-                    <li><a href=""><img src="../IMAGES/social/facebook-icon.png" alt="facebook-icon"></a></li>
-                    <li><a href=""><img src="../IMAGES/social/twitter-icon.png" alt="twitter-icon"></a></li>
-                </ul>
-            </nav>
-            <article class="credits">
-                <p>© 2022 EZ.Gaming, Todos los Derechos Reservados - 4P Marketing</p>
-            </article>
-        </footer>
     </div>
+
+    <!--#######################################-->
+    <!-- MAIN -->
+    <div class="d-flex flex-column align-items-center gap-1 text-center animate__animated animate__fadeInDown" id="descripcion_cursos">
+        <h2 class="m-2 w-100 display-3 text-uppercase text-light">aprende con los mejores</h2>
+        <p class="w-75 fs-4 p-2 text-light border border-warning rounded-topL-botR-1">
+            Aquí en EZ Gaming, podes aprender las herramientas que usan los profesionales para lograr mejoras sustanciales sin la presencia de un entrenador. Una de esas herramientas en la que que todos los profesionales confían es la revisión de repeticiónes de partidas. Pero, ¿por dónde empezas? Como Wild Rift es un juego complejo, conocer las habilidades, combos, items, cálculos de daño y enfrentamientos de cada campeón puede ser una tarea difícil. Estamos dedicados a brindarte los mejores planes de coaching para vos.
+        </p>
+    </div>
+
+    <section class="m-3 p-3 d-flex justify-content-around flex-wrap gap-3" id="seccion-planes-cursos">
+        <div class="p-3 pt-4 pb-4 curso border border-warning rounded-topL-botR-1 bg-dark" id="curso_3">
+            <h4 class="text-warning">Lo Básico</h4>
+            <h1 class="display-5 text-success">ARS$800<span class="fs-3 text-light">/ 1 hora</span></h1>
+            <p class="text-secondary">Entrenamiento en vivo y análisis de 1 partida</p>
+            <ul class="text-light">
+                <li>Control de objetivo</li>
+                <li>Distintos Matchups</li>
+                <li>Condiciones de victoria</li>
+                <li>Ruta de Jungla</li>
+                <li>Mentalidad de Crecimiento</li>
+                <hr class="w-75">
+                <li class="text-secondary t-line-through">Gestion de Oleadas</li>
+                <li class="text-secondary t-line-through">Optimizacion de Articulos</li>
+                <li class="text-secondary t-line-through">Counters</li>
+            </ul>
+            <p class="text-center">
+                <a class="btn btn-warning text-uppercase" href="" role="button">comprar</a>
+            </p>
+        </div>
+        <div class="p-3 pt-4 pb-4 curso border border-warning rounded-topL-botR-1 bg-dark" id="curso_3">
+            <h4 class="text-warning">Fundamentos</h4>
+            <h1 class="display-5 text-success">ARS$2800<span class="fs-3 text-light">/ 3 horas</span></h1>
+            <p class="text-secondary">Entrenamiento en vivo y análisis de 2 partidas</p>
+            <ul class="text-light">
+                <li>Control de objetivo</li>
+                <li>Distintos Matchups</li>
+                <li>Condiciones de victoria</li>
+                <li>Ruta de Jungla</li>
+                <li>Mentalidad de Crecimiento</li>
+                <li>Gestion de Oleadas</li>
+                <hr class="w-75">
+                <li class="text-secondary t-line-through">Optimizacion de Articulos</li>
+                <li class="text-secondary t-line-through">Counters</li>
+            </ul>
+            <p class="text-center">
+                <a class="btn btn-warning text-uppercase" href="" role="button">comprar</a>
+            </p>
+        </div>
+        <div class="p-3 pt-4 pb-4 curso border border-warning rounded-topL-botR-1 bg-dark" id="curso_3">
+            <h4 class="text-warning">Profesional</h4>
+            <h1 class="display-5 text-success">ARS$4500<span class="fs-3 text-light">/ 6 horas</span></h1>
+            <p class="text-secondary">Entrenamiento en vivo y análisis de 3 partidas</p>
+            <ul class="text-light">
+                <li>Control de objetivo</li>
+                <li>Distintos Matchups</li>
+                <li>Condiciones de victoria</li>
+                <li>Ruta de Jungla</li>
+                <li>Mentalidad de Crecimiento</li>
+                <li>Gestion de Oleadas</li>
+                <li>Optimizacion de Articulos</li>
+                <li>Counters</li>
+            </ul>
+            <p class="text-center">
+                <a class="btn btn-warning text-uppercase" href="" role="button">comprar</a>
+            </p>
+        </div>
+    </section>
+
+    <!--#######################################-->
+    <!-- FOOTER -->
+    <footer class="bg-dark m-0 d-flex flex-column gap-3">
+        <h3 class="bg-light text-center text-dark text-uppercase">- redes -</h3>
+        <div id="redes" class="d-flex justify-content-center gap-5 align-items-center bg-dark">
+            <a href=""><img src="../images/social/instagram-white-icon.png" alt=""></a>
+            <a href=""><img src="../images/social/facebook-white-icon.png" alt=""></a>
+            <a href=""><img src="../images/social/twitter-white-icon.png" alt=""></a>
+        </div>
+        <p class="text-light text-center fs-5 bg-dark">
+            @Copyright 2022.EZGaming - 4P Marketing
+        </p>
+    </footer>
 </body>
 </html>
