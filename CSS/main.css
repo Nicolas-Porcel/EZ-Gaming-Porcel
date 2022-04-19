@@ -1,6 +1,6 @@
 /*#######################################*/
 /*-- GENERAL --*/
-#header-menu{
+header{
     position: sticky;
     top: 0%;
     z-index: 3;
@@ -24,7 +24,7 @@
     background-size: cover;
 }
 
-#title-row{
+#titulo-secciones-inicio{
     background:linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3));
 }
 
@@ -280,11 +280,11 @@
 
 @media (max-width:360px){
 
-    #header-menu ul li a{
+    header ul li a{
         font-size: small !important;
     }
 
-    #title-row{
+    #titulo-secciones-inicio{
         font-size: x-large !important;
     }
 
