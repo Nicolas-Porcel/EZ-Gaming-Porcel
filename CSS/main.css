@@ -1,365 +1,254 @@
 /*#######################################*/
 /*-- GENERAL --*/
-header{
-    position: sticky;
-    top: 0%;
-    z-index: 3;
-}
+/*-- Header --*/
+header {
+  position: sticky;
+  top: 0%;
+  z-index: 3; }
+
+/*-- Footer --*/
+#redes a {
+  width: 5%;
+  transition: all 1s; }
+  #redes a:hover {
+    width: 4%; }
+
+#redes img {
+  width: 100%; }
 
 /*#######################################*/
 /*-- INDEX_HTML MAIN --*/
+#seccion-inicio-nosotros {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../images/backgrounds/noxus.jpg);
+  background-size: cover; }
 
-#first-info-section{
-    background-image:linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.8)) ,url(../images/backgrounds/noxus.jpg);
-    background-size: cover;
-}
+#seccion-inicio-coaching {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../images/backgrounds/shurima.jpg);
+  background-size: cover; }
 
-#second-info-section{
-    background-image:linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.8)) ,url(../images/backgrounds/shurima.jpg);
-    background-size: cover;
-}
+#seccion-inicio-guias {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../images/backgrounds/demacia2.jpg);
+  background-size: cover; }
 
-#third-info-section{
-    background-image:linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.8)) ,url(../images/backgrounds/demacia2.jpg);
-    background-size: cover;
-}
+#titulo-seccion-inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); }
 
-#titulo-secciones-inicio{
-    background:linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3));
-}
+.descripcion-seccion-inicio {
+  transition: all 1s; }
 
-.description-info{
-    transition: all 1s;
-}
-
-.description-info:hover{
-    background-image:linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9));
-}
+.descripcion-seccion-inicio:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); }
 
 /*#######################################*/
 /*-- NOSOTROS_HTML MAIN --*/
+.nosotros-main {
+  background: url(../images/backgrounds/white-stripe-background.png), linear-gradient(#e3152a, white);
+  background-size: cover; }
 
-.nosotros-main{
-    background: url(../images/backgrounds/white-stripe-background.png), linear-gradient(rgb(227, 21, 42), white);
-    background-size: cover;
-}
+.menu-nosotros a {
+  text-decoration: underline; }
 
-.menu-nosotros ul li a{
-    text-decoration: underline;
-}
+#articulo-nosotros-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/nosotros/infinity-esports.jpg);
+  background-size: cover; }
 
-#articulo-nosotros-1{
-    background:linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(../images/nosotros/infinity-esports.jpg);
-    background-size: cover;
-}
+#articulo-nosotros-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/nosotros/mobile-esports-team.jpg);
+  background-size: cover; }
 
-#articulo-nosotros-2{
-    background:linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(../images/nosotros/mobile-esports-team.jpg);
-    background-size: cover;
-}
+.titulo-nosotros {
+  font-style: italic; }
 
-.titulo-nosotros{
-    font-style: italic;
-}
+.descripcion-nosotros {
+  transition: all 0.1s;
+  border-radius: 1rem; }
+  .descripcion-nosotros:hover {
+    background: linear-gradient(rgba(45, 6, 6, 0.9), rgba(45, 6, 6, 0.9)); }
 
-.descripcion-nosotros{
-    transition: all 0.1s;
-    border-radius: 1rem;
-}
-.descripcion-nosotros:hover{
-
-    background:linear-gradient(rgba(45, 6, 6, 0.9), rgb(45, 6, 6, 0.9));
-}
-
-#cabecera-preguntas{
-    background-color: rgb(193, 31, 23);
-}
-
-#cabecera-preguntas img{
+#cabecera-preguntas {
+  background-color: #c11f17; }
+  #cabecera-preguntas img {
     border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
+    border-top-right-radius: 2rem; }
 
-#seccion-preguntas{
-    background-color: rgb(193, 31, 23);
-}
+#seccion-preguntas {
+  background-color: #c11f17; }
 
-.listado-preguntas{
-    list-style: none;
-}
-
-.listado-preguntas h3{
-    color: rgb(26, 1, 4);
-}
-
-.listado-preguntas li p{
+.listado-preguntas {
+  list-style: none; }
+  .listado-preguntas h3 {
+    color: #1a0104; }
+  .listado-preguntas li p {
     font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
 /*#######################################*/
 /*-- COACHING_HTML MAIN --*/
-#descripcion_cursos{
-    background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(../images/backgrounds/eye-of-Ra-background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    border-bottom: 3px solid rgb(34, 34, 34);
-}
+#descripcion_cursos {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/backgrounds/eye-of-Ra-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 3px solid #222222; }
+  #descripcion_cursos h2 {
+    font-style: italic; }
+  #descripcion_cursos p {
+    transition: all 0.5s; }
+    #descripcion_cursos p:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); }
 
-#descripcion_cursos h2{
-    font-style: italic;
-}
+#seccion-planes-cursos {
+  background-color: #120d00;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/backgrounds/eye-of-Ra-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 1rem; }
 
-#descripcion_cursos p{
-    transition: all 0.5s;
-}
-
-#descripcion_cursos p:hover{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
-}
-
-#seccion-planes-cursos{
-    background-color: rgb(18, 13, 0);
-    background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(../images/backgrounds/eye-of-Ra-background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    border-radius: 1rem;
-}
-
-.curso ul{
-    list-style:circle;
-}
-
-.curso ul li{
+.curso ul {
+  list-style: circle; }
+  .curso ul li {
     width: fit-content;
-    transition: all 0.1s;
-}
-
-.curso ul li:hover{
-    color: rgb(255, 217, 0);
-}
-
+    transition: all 0.1s; }
+    .curso ul li:hover {
+      color: #ffd900; }
 
 /*#######################################*/
 /*-- GUIA_HTML MAIN --*/
-#intro-wr{
-    background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(../images/backgrounds/zed-background.jpg);
-    background-size: cover;
-}
+#intro-wr {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/backgrounds/zed-background.jpg);
+  background-size: cover; }
 
-.descripcion-intro{
-    transition: all 0.5s;
-}
-
-.descripcion-intro:hover{
+.descripcion-intro {
+  transition: all 0.5s; }
+  .descripcion-intro:hover {
     background: linear-gradient(rgba(6, 9, 51, 0.9), rgba(6, 9, 51, 0.9));
-    border-radius: 1rem;
-}
+    border-radius: 1rem; }
 
-#menu-guia li{
-    transition: all 0.1s;
-}
+#menu-guia li {
+  transition: all 0.1s; }
+  #menu-guia li:hover {
+    background-color: rgba(6, 9, 51, 0.9); }
 
-#menu-guia li:hover{
-    background-color: rgba(6, 9, 51, 0.9);
-}
+#top {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/backgrounds/darius-background.jpg);
+  background-size: cover; }
 
-#top{
-    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/darius-background.jpg);
-    background-size: cover;
-}
-#jungla{
-    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/jarvan-background.png);
-    background-size: cover;
-}
-#mid{
-    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/Akali-background.jpg);
-    background-size: cover;
-}
-#supp{
-    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/braum-background.jpg);
-    background-size: cover;
-}
-#adc{
-    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9)), url(../images/backgrounds/MissFortune-background.jpg);
-    background-size: cover;
-}
+#jungla {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/backgrounds/jarvan-background.png);
+  background-size: cover; }
 
-.titulo-carril{
-    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
-}
+#mid {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/backgrounds/Akali-background.jpg);
+  background-size: cover; }
 
-.descripcion-carril{
-    transition: all 0.5s;
-    border-radius: 1rem;
-}
+#supp {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/backgrounds/braum-background.jpg);
+  background-size: cover; }
 
-.descripcion-carril:hover{
-    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
-}
+#adc {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/backgrounds/MissFortune-background.jpg);
+  background-size: cover; }
 
-/*#######################################*/
-/*-- FOOTER --*/
-#redes a{
-    width: 5%;
-    transition: all 1s;
-}
+.titulo-carril {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); }
 
-#redes a:hover{
-    width: 4%;
-}
-
-#redes img{
-    width: 100%;
-}
+.descripcion-carril {
+  transition: all 0.5s;
+  border-radius: 1rem; }
+  .descripcion-carril:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); }
 
 /*#######################################*/
 /*-- ANIMACIONES --*/
-#info-nosotros.animate__animated.animate__fadeIn{
-    animation-duration: 3s;
-}
+#info-nosotros.animate__animated.animate__fadeIn {
+  animation-duration: 3s; }
 
-#info-cursos.animate__animated.animate__fadeIn{
-    animation-duration: 6s;
-}
+#info-cursos.animate__animated.animate__fadeIn {
+  animation-duration: 6s; }
 
-#info-guias.animate__animated.animate__fadeIn{
-    animation-duration: 9s;
-}
+#info-guias.animate__animated.animate__fadeIn {
+  animation-duration: 9s; }
 
-.animate__animated.animate__headShake{
-    animation-duration: 1.5s;
-}
+.animate__animated.animate__headShake {
+  animation-duration: 1.5s; }
 
-.animate__animated.animate__zoomIn{
-    animation-duration: 2s;
-}
+.animate__animated.animate__zoomIn {
+  animation-duration: 2s; }
 
-#descripcion-intro{
-    animation-duration: 3s;
-}
+#descripcion-intro {
+  animation-duration: 3s; }
 
-#descripcion-instalacion{
-    animation-duration: 6s;
-}
+#descripcion-instalacion {
+  animation-duration: 6s; }
 
-#descripcion-primeros-pasos{
-    animation-duration: 9s;
-}
+#descripcion-primeros-pasos {
+  animation-duration: 9s; }
 
 /*#######################################*/
 /*-- CLASES VARIAS --*/
+.rounded-topL-botR-1 {
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; }
 
-.rounded-topL-botR-1{
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
+.rounded-topR-botL-1 {
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem; }
 
-.rounded-topR-botL-1{
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-}
+.rounded-topL-botR-2 {
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem; }
 
-.rounded-topL-botR-2{
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
+.rounded-topR-botL-2 {
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem; }
 
-.rounded-topR-botL-2{
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-}
-
-.t-line-through{
-    text-decoration: line-through;
-}
-
+.t-line-through {
+  text-decoration: line-through; }
 
 /*#######################################*/
 /*-- RESPONSIVE --*/
-
-@media (max-width:360px){
-
-    header ul li a{
-        font-size: small !important;
-    }
-
-    #titulo-secciones-inicio{
-        font-size: x-large !important;
-    }
-
-    .division{
-        margin: 1rem !important;
-    }
-
-    .description-info{
-        font-size: medium !important;
-        width: 100% !important;
-    } 
-
-    .descripcion-nosotros{
-        font-size: medium !important;
-    }
-
-    .titulo-nosotros{
-        font-size: x-large !important;
-    }
-
-    .listado-preguntas h3{
-        font-size: large !important;
-    }
-
-    .listado-preguntas p{
-        font-size: medium !important;
-    }
-
-    #descripcion-cursos h2{
-        font-size: x-large !important;
-    }
-
-    #descripcion-cursos p{
-        width: 90% !important;
-        font-size: medium !important;
-    }
-
-    #seccion-planes-cursos{
-        margin: 0% !important;
-    }
-
-    .curso{
-        height: fit-content !important;
-        padding: 0.5rem !important;
-        padding-bottom: 0rem !important;
-    }
-
-    .descripcion-intro{
-        width: 100% !important;
-        font-size: medium !important;
-    }
-
-    #menu-guia a{
-        font-size: medium !important;
-    }
-
-    .titulo-articulo{
-        font-size: x-large !important;
-    }
-
-    .descripcion_articulo{
-        width: 100% !important;
-        font-size: medium !important;
-    }
-
-    .descripcion-carril{
-        padding: 0rem !important;
-        font-size: medium !important;
-    }
-
-    .contenido-otras-caracs{
-        width: 90% !important;
-    }
-
-    .descripcion-caracteristicas{
-        font-size: medium !important;
-    }
-}
+@media (max-width: 360px) {
+  header ul li a {
+    font-size: small !important; }
+  #titulo-seccion-inicio {
+    font-size: x-large !important; }
+  .division {
+    margin: 1rem !important; }
+  .descripcion-seccion-inicio {
+    font-size: medium !important;
+    width: 100% !important; }
+  .descripcion-nosotros {
+    font-size: medium !important; }
+  .titulo-nosotros {
+    font-size: x-large !important; }
+  .listado-preguntas h3 {
+    font-size: large !important; }
+  .listado-preguntas p {
+    font-size: medium !important; }
+  #descripcion-cursos h2 {
+    font-size: x-large !important; }
+  #descripcion-cursos p {
+    width: 90% !important;
+    font-size: medium !important; }
+  #seccion-planes-cursos {
+    margin: 0% !important; }
+  .curso {
+    height: fit-content !important;
+    padding: 0.5rem !important;
+    padding-bottom: 0rem !important; }
+  .descripcion-intro {
+    width: 100% !important;
+    font-size: medium !important; }
+  #menu-guia a {
+    font-size: medium !important; }
+  .titulo-articulo {
+    font-size: x-large !important; }
+  .descripcion_articulo {
+    width: 100% !important;
+    font-size: medium !important; }
+  .descripcion-carril {
+    padding: 0rem !important;
+    font-size: medium !important; }
+  .contenido-otras-caracs {
+    width: 90% !important; }
+  .descripcion-caracteristicas {
+    font-size: medium !important; } }
