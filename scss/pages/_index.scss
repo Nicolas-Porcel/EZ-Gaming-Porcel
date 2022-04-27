@@ -1,0 +1,28 @@
+/*#######################################*/
+/*-- INDEX_HTML MAIN --*/
+
+#seccion-inicio-nosotros{
+    background:$gradient_4_8, url(../../images/backgrounds/noxus.jpg);
+    background-size: cover;
+}
+
+#seccion-inicio-coaching{
+    background-image:$gradient_4_8, url(../../images/backgrounds/shurima.jpg);
+    background-size: cover;
+}
+
+#seccion-inicio-guias{
+    background-image:$gradient_4_8, url(../../images/backgrounds/demacia2.jpg);
+    background-size: cover;
+}
+
+.titulo-seccion-inicio{
+    background:$gradient_3_3;
+}
+
+.descripcion-seccion-inicio{
+    transition: all 1s;
+    &:hover{
+        background-image:$gradient_9_9;
+    }
+}

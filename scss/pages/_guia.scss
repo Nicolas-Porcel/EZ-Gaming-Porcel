@@ -1,0 +1,56 @@
+/*#######################################*/
+/*-- GUIA_HTML MAIN --*/
+#intro-wr{
+    background: $gradient_8_8, url(../images/backgrounds/zed-background.jpg);
+    background-size: cover;
+}
+
+.descripcion-intro{
+    transition: all 0.5s;
+    &:hover{
+        background: linear-gradient(rgba(6, 9, 51, 0.9), rgba(6, 9, 51, 0.9));
+        border-radius: 1rem;
+    }
+}
+
+#menu-guia{
+    li{
+        transition: all 0.1s;
+        &:hover{
+            background-color: $azul_guia;
+        }
+    }
+}
+
+#top{
+    background: $gradient_7_9, url(../images/backgrounds/darius-background.jpg);
+    background-size: cover;
+}
+#jungla{
+    background: $gradient_7_9, url(../images/backgrounds/jarvan-background.png);
+    background-size: cover;
+}
+#mid{
+    background: $gradient_7_9, url(../images/backgrounds/Akali-background.jpg);
+    background-size: cover;
+}
+#supp{
+    background: $gradient_7_9, url(../images/backgrounds/braum-background.jpg);
+    background-size: cover;
+}
+#adc{
+    background: $gradient_7_9, url(../images/backgrounds/MissFortune-background.jpg);
+    background-size: cover;
+}
+
+.titulo-carril{
+    background: $gradient_6_6;
+}
+
+.descripcion-carril{
+    transition: all 0.5s;
+    border-radius: 1rem;
+    &:hover{
+        background: $gradient_6_6;
+    }
+}

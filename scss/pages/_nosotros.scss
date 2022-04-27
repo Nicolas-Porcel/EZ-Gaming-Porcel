@@ -1,0 +1,60 @@
+/*#######################################*/
+/*-- NOSOTROS_HTML MAIN --*/
+
+.nosotros-main{
+    background: url(../../images/backgrounds/white-stripe-background.png), linear-gradient(rgb(227, 21, 42), white);
+    background-size: cover;
+}
+
+.menu-nosotros{
+    a{
+        text-decoration: underline;
+    }
+}
+
+#articulo-nosotros-1{
+    background:$gradient_8_8, url(../../images/nosotros/infinity-esports.jpg);
+    background-size: cover;
+}
+
+#articulo-nosotros-2{
+    background:$gradient_8_8, url(../../images/nosotros/mobile-esports-team.jpg);
+    background-size: cover;
+}
+
+.titulo-nosotros{
+    font-style: italic;
+}
+
+.descripcion-nosotros{
+    transition: all 0.1s;
+    border-radius: 1rem;
+    &:hover{
+        background:linear-gradient(rgba(45, 6, 6, 0.9), rgba(45, 6, 6, 0.9));
+    }
+}
+
+#imagen-cabecera-preguntas{
+    background-color: $rojo_preguntas;
+    img{
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+}
+
+#seccion-preguntas{
+    background-color: $rojo_preguntas;
+}
+
+.listado-preguntas{
+    list-style: none;
+    h3{
+        color: $bordo_preguntas;
+    }
+    li{
+        p{
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}

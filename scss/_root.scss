@@ -1,0 +1,60 @@
+/*#######################################*/
+/*-- ANIMACIONES --*/
+#info-nosotros.animate__animated.animate__fadeIn{
+    animation-duration: 3s;
+}
+
+#info-cursos.animate__animated.animate__fadeIn{
+    animation-duration: 6s;
+}
+
+#info-guias.animate__animated.animate__fadeIn{
+    animation-duration: 9s;
+}
+
+.animate__animated.animate__headShake{
+    animation-duration: 1.5s;
+}
+
+.animate__animated.animate__zoomIn{
+    animation-duration: 2s;
+}
+
+#descripcion-intro{
+    animation-duration: 3s;
+}
+
+#descripcion-instalacion{
+    animation-duration: 6s;
+}
+
+#descripcion-primeros-pasos{
+    animation-duration: 9s;
+}
+
+/*#######################################*/
+/*-- CLASES VARIAS --*/
+
+.rounded-topL-botR-1{
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.rounded-topR-botL-1{
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.rounded-topL-botR-2{
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.rounded-topR-botL-2{
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.t-line-through{
+    text-decoration: line-through;
+}

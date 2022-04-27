@@ -1,0 +1,97 @@
+/*#######################################*/
+/*-- RESPONSIVE --*/
+
+@media (max-width:360px){
+
+    header{
+        ul{
+            li{
+                a{
+                    font-size: small !important;
+                }
+            }
+        }
+    }
+
+    #titulo-seccion-inicio{
+        font-size: x-large !important;
+    }
+
+    .division{
+        margin: 1rem !important;
+    }
+
+    .descripcion-seccion-inicio{
+        font-size: medium !important;
+        width: 100% !important;
+    } 
+
+    .descripcion-nosotros{
+        font-size: medium !important;
+    }
+
+    .titulo-nosotros{
+        font-size: x-large !important;
+    }
+
+    .listado-preguntas{
+        h3{
+            font-size: large !important;
+        }
+        p{
+            font-size: medium !important;
+        }
+    }
+
+    #descripcion-cursos{
+        h2{
+            font-size: x-large !important;
+        }
+        p{
+            width: 90% !important;
+            font-size: medium !important;
+        }  
+    }
+
+    #seccion-planes-cursos{
+        margin: 0% !important;
+    }
+
+    .curso{
+        height: fit-content !important;
+        padding-bottom: 0rem !important;
+    }
+
+    .descripcion-intro{
+        width: 100% !important;
+        font-size: medium !important;
+    }
+
+    #menu-guia{
+        a{
+            font-size: medium !important;
+        }
+    }
+
+    .titulo-articulo{
+        font-size: x-large !important;
+    }
+
+    .descripcion_articulo{
+        width: 100% !important;
+        font-size: medium !important;
+    }
+
+    .descripcion-carril{
+        padding: 0rem !important;
+        font-size: medium !important;
+    }
+
+    .contenido-otras-caracs{
+        width: 90% !important;
+    }
+
+    .descripcion-caracteristicas{
+        font-size: medium !important;
+    }
+}

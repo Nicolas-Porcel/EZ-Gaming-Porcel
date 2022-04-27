@@ -1,0 +1,38 @@
+/*#######################################*/
+/*-- COACHING_HTML MAIN --*/
+#descripcion-cursos{
+    background: $gradient_8_8, url(../images/backgrounds/eye-of-Ra-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 3px solid $gris_borde;
+    h2{
+        font-style: italic;
+    }
+    p{
+        transition: all 0.5s;
+        &:hover{
+            background: $gradient_6_6;
+        }
+    }
+}
+
+#seccion-planes-cursos{
+    background-color: $marron_coach;
+    background: $gradient_8_8, url(../images/backgrounds/eye-of-Ra-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.curso{
+    width: 24rem;
+    ul{
+        list-style:circle;
+        li{
+            width: fit-content;
+            transition: all 0.1s;
+            &:hover{
+                color: $amarillo_coach;
+            }
+        }
+    }
+}

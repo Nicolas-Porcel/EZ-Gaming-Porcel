@@ -1,0 +1,14 @@
+/*#######################################*/
+/*-- FOOTER --*/
+#redes{
+    a{
+        width: 5%;
+        transition: all 1s;
+        &:hover{
+            width: 4%;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
