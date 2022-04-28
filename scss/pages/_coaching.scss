@@ -24,15 +24,74 @@
 }
 
 .curso{
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     width: 24rem;
     ul{
         list-style:circle;
         li{
             width: fit-content;
             transition: all 0.1s;
+        }
+    }
+    .boton-curso{
+        color: white;
+        font-weight: bold;
+    }
+}
+
+/*utilizo extend para reutilizar codigo y modificar los colores de cada curso*/
+#curso-1{
+    @extend .curso;
+    border: 1px solid $amarillo_coach;
+    .titulo-curso{
+        color: $amarillo_coach;
+    }
+    ul{
+        li{
             &:hover{
                 color: $amarillo_coach;
             }
         }
+    }
+    .boton-curso{
+        background-color: $amarillo_coach;   
+    }
+}
+
+#curso-2{
+    @extend .curso;
+    border: 1px solid $naranja_coach;
+    .titulo-curso{
+        color: $naranja_coach;
+    }
+    ul{
+        li{
+            &:hover{
+                color: $naranja_coach;
+            }
+        }
+    }
+    .boton-curso{
+        background-color: $naranja_coach;
+    }
+}
+
+#curso-3{
+    @extend .curso;
+    border: 1px solid $rojo_coach;
+    .titulo-curso{
+        color: $rojo_coach;
+    }
+    ul{
+        li{
+            &:hover{
+                color: $rojo_coach;
+            }
+        }
+    }
+    .boton-curso{
+        background-color: $rojo_coach;
     }
 }

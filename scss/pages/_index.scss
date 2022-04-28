@@ -1,28 +1,40 @@
 /*#######################################*/
 /*-- INDEX_HTML MAIN --*/
 
-#seccion-inicio-nosotros{
-    background:$gradient_4_8, url(../../images/backgrounds/noxus.jpg);
-    background-size: cover;
+/*utilizo un map junto con un each para generar mis secciones de inicio*/
+
+$seccion:(
+    nosotros: noxus,
+    coaching: shurima,
+    guias: demacia,
+);
+
+$fondo-config:(
+    tamanio: cover,
+    centro: center,
+    no-repetir: no-repeat
+);
+
+@each $nombre, $fondo in $seccion {
+    #seccion-inicio-#{$nombre}{ 
+        background:$gradient_4_8, url(../../images/backgrounds/#{$fondo}.jpg);
+        background-size: map-get($fondo-config, tamanio);
+        background-position: map-get($fondo-config, centro);
+        background-repeat: map-get($fondo-config, no-repetir);
+    }
 }
 
-#seccion-inicio-coaching{
-    background-image:$gradient_4_8, url(../../images/backgrounds/shurima.jpg);
-    background-size: cover;
-}
-
-#seccion-inicio-guias{
-    background-image:$gradient_4_8, url(../../images/backgrounds/demacia2.jpg);
-    background-size: cover;
-}
-
-.titulo-seccion-inicio{
-    background:$gradient_3_3;
-}
-
-.descripcion-seccion-inicio{
-    transition: all 1s;
-    &:hover{
-        background-image:$gradient_9_9;
+/*utilizo map-get*/
+.secciones-inicio{
+    padding: 1rem;
+    text-align: center;
+    .titulo-seccion-inicio{
+        background:$gradient_3_3;
+    }
+    .descripcion-seccion-inicio{
+        transition: all 1s;
+        &:hover{
+            background:$gradient_9_9;
+        }
     }
 }

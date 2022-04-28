@@ -22,25 +22,20 @@
     }
 }
 
-#top{
-    background: $gradient_7_9, url(../images/backgrounds/darius-background.jpg);
-    background-size: cover;
-}
-#jungla{
-    background: $gradient_7_9, url(../images/backgrounds/jarvan-background.png);
-    background-size: cover;
-}
-#mid{
-    background: $gradient_7_9, url(../images/backgrounds/Akali-background.jpg);
-    background-size: cover;
-}
-#supp{
-    background: $gradient_7_9, url(../images/backgrounds/braum-background.jpg);
-    background-size: cover;
-}
-#adc{
-    background: $gradient_7_9, url(../images/backgrounds/MissFortune-background.jpg);
-    background-size: cover;
+/*utilizo un map para generar los backgrounds de los carriles*/
+$carriles:(
+    top: darius, 
+    jungla: jarvan, 
+    mid: akali, 
+    supp: braum, 
+    adc: miss-fortune,
+);
+
+@each $rol, $campeon in $carriles {
+    ##{$rol}{ 
+        background: $gradient_7_9, url(../images/backgrounds/#{$campeon}-background.jpg);
+        background-size: cover;
+    }    
 }
 
 .titulo-carril{

@@ -12,26 +12,37 @@
     }
 }
 
+/*utilizo un mixin para mis articulos sobre nosotros*/
+@mixin articulos($width-1, $border, $text-align, $style, $transicion, $width-2, $color, $radius, $gradiente) {
+    width: $width-1;
+    border-bottom: $border;
+    text-align: $text-align;
+    .titulo-nosotros{
+        font-style: $style;
+    }
+    .descripcion-nosotros{
+        width: $width-2;
+        padding: 2rem;
+        border: 1px solid $color;
+        border-top-right-radius: $radius;
+        border-bottom-left-radius: $radius;
+        transition: $transicion;
+        &:hover{
+            background: $gradiente;
+        }
+    }
+}
+
 #articulo-nosotros-1{
     background:$gradient_8_8, url(../../images/nosotros/infinity-esports.jpg);
     background-size: cover;
+    @include articulos(100%, 2px solid rgb(0, 0, 108), left, italic, all 1s, 75%, rgb(210, 0, 0), 1rem, linear-gradient(rgba(60, 0, 0, 0.9), rgba(60, 0, 0, 0.9)));
 }
 
 #articulo-nosotros-2{
     background:$gradient_8_8, url(../../images/nosotros/mobile-esports-team.jpg);
     background-size: cover;
-}
-
-.titulo-nosotros{
-    font-style: italic;
-}
-
-.descripcion-nosotros{
-    transition: all 0.1s;
-    border-radius: 1rem;
-    &:hover{
-        background:linear-gradient(rgba(45, 6, 6, 0.9), rgba(45, 6, 6, 0.9));
-    }
+    @include articulos(100%, 2px solid rgb(108, 0, 0), right, italic, all 1s, 75%, rgb(0, 0, 210), 1rem, linear-gradient(rgba(0, 9, 60, 0.9), rgba(0, 9, 60, 0.9)));
 }
 
 #imagen-cabecera-preguntas{
